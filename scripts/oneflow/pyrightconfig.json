@@ -1,0 +1,19 @@
+{
+    "typeCheckingMode": "strict",
+    "reportMissingTypeStubs": "none",
+    "reportRedeclaration": false,
+    "reportUnknownParameterType": false,
+    "reportUnknownVariableType": false,
+    "reportUnknownArgumentType": false,
+    "reportUnknownMemberType": false,
+    "reportGeneralTypeIssues": false,
+    "reportAny": false,
+    "executionEnvironments": [
+      {
+        "root": ".",
+        "reportIncompatibleVariableOverride": false,
+        "reportCallIssue": false,
+        "reportAssignmentType": false
+      }
+    ]
+  }

@@ -1,0 +1,21 @@
+[project]
+name = "langutil-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "json-repair>=0.52.0",
+    "langchain[cohere,community,ollama,openai]>=0.3.27",
+    "hanlp>=2.1.2",
+    "ltp>=4.2.14",
+    "langchain-milvus>=0.2.1",
+    "langextract[openai]",
+]
+
+[tool.uv.sources]
+langextract = { git = "https://github.com/drawmoon/langextract.git", rev = "main" }
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

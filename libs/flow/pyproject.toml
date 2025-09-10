@@ -1,0 +1,16 @@
+[project]
+name = "langutil-flow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["langutil-infra", "langutil-llm", "lfx"]
+
+[tool.uv.sources]
+lfx = { git = "https://github.com/drawmoon/langflow.git", subdirectory = "src/lfx", rev = "main" }
+langutil-llm = { workspace = true }
+langutil-infra = { workspace = true }
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

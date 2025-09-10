@@ -1,0 +1,12 @@
+[project]
+name = "oneflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=6.1.0",
+    "json-repair>=0.54.3",
+    "pyiter>=0.13.9",
+    "requests>=2.32.5",
+]

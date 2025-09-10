@@ -1,0 +1,25 @@
+[project]
+name = "langutil"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cachetools>=5.5.2",
+    "pydantic>=2.11.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "ruff>=0.12.12",
+]
+vector = [
+    "langchain-milvus>=0.2.1",
+]
+
+[tool.uv.workspace]
+members = ["libs/*"]
+
+# [tool.uv]
+# index-url = "https://mirrors.ustc.edu.cn/pypi/simple"
